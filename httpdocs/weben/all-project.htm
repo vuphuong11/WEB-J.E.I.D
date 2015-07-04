@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>J.E.I.D Portfolio</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="  "/>
+<meta name="keywords" content=" " />
+
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+<link rel="icon" href="../Images/index/icon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="../Images/index/icon.png" type="image/x-icon" />
+
+<script type="text/javascript" src="../script/mootools-core-1.4.0-full-compat-yc.js"></script>
+<script type="text/javascript" src="../script/mootools-more-1.4.0.1.js"></script>
+<script type="text/javascript" src="../script/mootools-cgrendering.js"></script>
+
+</head>
+<body onselectstart="return false;">
+	<div class="main" id="layout">
+	<img id="background_image" src="../Images/index/d-t.gif" alt="" />
+		<div class="top" id="top">
+			<div class="icons">
+				<a class="h2" href="../index.htm"><img src="../Images/index/vn.gif" alt="" />&nbsp;Vietnamese</a>&nbsp;
+				<a class="h2" href="index-en.htm"><img src="../Images/index/en.gif" alt="" />&nbsp;English</a>&nbsp;
+            	<a class="h2" href="#like" class="like" onclick="return __like();"><img src="../Images/index/icon-like.png" alt="" />&nbsp;Like</a>
+			</div>
+			<ul class="inline menu">
+				<li><a class="h2" href="index-en.htm" >Home</a></li>
+				<li><a class="h2" href="all-project.htm" >Projects</a></li>
+				<li><a class="h2" href="about-us.htm" id="about">About us</a></li>
+				<li><a class="h2" href="contact-us.htm" id="contacts">Contact us</a></li>
+			</ul>
+		</div>
+		<div id="layer" style="background-image: url('../Images/index/bg.png');">
+			<div class="projects">
+				
+			</div>
+		</div >
+		
+        <div class="menuLeft">
+            <a href="index-en.htm" class="logo"></a>
+            <ul class="tags">
+                <li><a ></a></li>
+                <li><a id="architecture" href="architecture.htm" class="">Architecture</a></li>
+                <li><a id="interior" href="interior.htm" class="">Interior</a></li>
+                <li><a id="perspective" href="perspective.htm" class="">Perspective</a></li>
+                <li><a id="furniture" href="furniture.htm" class="">Furniture</a></li>
+                <li style="margin-top: 40px;"><a id="about-us" href="about-us.htm" class="">About Us</a></li>
+            </ul>
+        </div>
+
+		<script type="text/javascript">
+
+	var images = ['../Images/architecture/VILLA DONG NAI/3.jpg', '../Images/architecture/CAMBODIA/5.jpg', '../Images/architecture/GARDEN/3.jpg'
+	  ];
+
+	window.addEvent('domready', function() {
+		projects.set(images[Number.random(0, images.length - 1)], 1600, 1200);
+	});
+
+	window.addEvent('resize', function() {
+		projects.resize();
+	});
+
+	window.addEvent('load', function() {
+
+		var images = [ '../Images/architecture/BINH DIEN OFFICE/1.jpg', '../Images/architecture/CAMBODIA/1.jpg','../Images/architecture/GARDEN/1.jpg','../Images/architecture/KARAOKE BUILDING/1.jpg','../Images/architecture/OFFICE BUILDINGS/1.jpg','../Images/architecture/OFFICIAL COMMITTEE/1.jpg','../Images/architecture/RESTAURANT WEST LAKE/1.jpg','../Images/architecture/TOWN_HOUSE/1.jpg','../Images/architecture/VILLA BINH DUONG/1.jpg','../Images/architecture/VILLA COUNTRY/1.jpg','../Images/architecture/VILLA DISTRICT 1/1.jpg','../Images/architecture/VILLA DISTRICT 7/1.jpg','../Images/architecture/VILLA DONG NAI/1.jpg','../Images/architecture/VILLA MY KIM/1.jpg','../Images/architecture/VILLA THAO DIEN/1.jpg','../Images/architecture/VILLA THU THIEM/1.jpg'
+      	  ];
+
+		var myImages = Asset.images(images, {
+		    onProgress : function(counter, index, source) {
+				index = index + 1;
+				var img = $('project_thumb_' + index);
+				img.src = source;
+				img.setStyle('visibility', 'visible').fade('hide').fade(1);
+				$('project_preload_' + index).fade('hide');
+		    }
+		});
+	});
+
+</script>
+
+	<div class="bottom">
+		<p class="h2" style="float: left; margin-right: 22px;"> JEID - Architecture and Construction Co.,Ltd</p>
+		<p class="h2" style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: 0989.626.238 - 0975.600.643&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: jeid.design@gmail.com</p>
+		<p class="h2" style="float: right;">design@2012 </p>
+	</div>
+</div>
+<div id="loader"></div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17793722-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www/') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

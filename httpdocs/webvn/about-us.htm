@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>J.E.I.D Portfolio</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+<link rel="icon" href="../Images/index/icon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="../Images/index/icon.png" type="image/x-icon" />
+
+<script type="text/javascript" src="../script/mootools-core-1.4.0-full-compat-yc.js"></script>
+<script type="text/javascript" src="../script/mootools-more-1.4.0.1.js"></script>
+<script type="text/javascript" src="../script/mootools-cgrendering.js"></script>
+
+</head>
+<body onselectstart="return false;">
+
+<div class="main" id="layout">
+	<img id="background_image" src="../Images/index/d-t.gif" alt="" />
+	<div class="top" id="top">
+		<div class="icons">
+			<a class="h2" href="../index.htm"><img src="../Images/index/vn.gif" alt="" />&nbsp;Vietnamese</a>&nbsp;
+			<a class="h2" href="../weben/index-en.htm"><img src="../Images/index/en.gif" alt="" />&nbsp;English</a>&nbsp;
+            <a class="h2" href="#like" class="like" onclick="return __like();"><img src="../Images/index/icon-like.png" alt="" />&nbsp;Like</a>			
+		</div>
+		<ul class="inline menu">
+			<li><a class="h2" href="../index.htm" >Trang chủ</a></li>
+			<li><a class="h2" href="all-project.htm" >Dự án</a></li>
+			<li><a class="h2" href="about-us.htm" id="about">Giới thiệu</a></li>
+			<li><a class="h2" href="contact-us.htm" id="contacts">Liên hệ</a></li>
+		</ul>
+	</div>
+	<div id="layer" style="background-image: url('../Images/index/bg.png');">
+	<div class="effect-lines-right"></div>
+	<div id="content-about" class="about">
+		<div class="content text">
+			<div class="map">
+				</br></br></br><h1 class="h1"><strong> GIỚI THIỆU VỀ CÔNG TY</strong> </h1></br>
+				<h1 class="serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEID bắt đầu hoạt động trong lĩnh vực thiết kế và thi công nội ngoại thất công trình từ năm 2009, đến nay JEID đã gặt hái được nhiều thành công nhất định và trở thành một công ty chuyên nghiệp với đội ngũ giàu kinh nghiệm. Những thành công đó chính là tâm huyết của tất cả các Kiến Trúc Sư, Kỹ sư, những người đã lao động sáng tạo trong suốt thời gian qua và đó chính là niềm tự hào của JEID. Chúng tôi luôn là đối tác tin cậy của các công ty kiến trúc trong và ngoài nước trong việc phối hợp thiết kế và thể hiện đồ án kiến trúc một cách chuyên nghiệp. Một trong số công ty đó đến từ Newyork, Singapore, Philippin…..</h1><br/>
+				<h1 class="serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEID luôn xây dựng và phát triễn đội ngũ nhân viên kỹ thuật cao, đáp ứng mọi yêu cầu của khách hàng trong và ngoài nước. Với mục tiêu là hướng tới sự hoàn mỹ trong chất lượng thiết kế và thể hiện các công trình mang tính chuyên nghiệp cao. Với phương châm “Mỗi công trình là một tác phẩm”, chúng tôi luôn hoàn thiện trong những thiết kế và biến chúng thành các tác phẩm cho khách hàng và cho xã hội.</h1><br/>
+				<h1 class="serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JEID sẽ luôn làm hài lòng tất cả các khách hàng và đối tác đến với JEID. Và là công ty đáng tin cậy để cho khách hàng và đối tác đặt niềm tin. </h1>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="menuLeft">
+	<a href="../index.htm" class="logo"></a>
+</div>
+
+<script type="text/javascript">
+
+	var _resize = function () {
+
+		var top = ($('layer').getSize().y / 2) - ($('content-about').getSize().y / 2);
+		var left = ($('layer').getSize().x / 2) - ($('content-about').getSize().x / 2);
+
+		$('content-about').setStyle('top', top);
+		$('content-about').setStyle('left', left);
+	}
+
+	var images = ['../Images/architecture/VILLA DONG NAI/3.jpg', '../Images/architecture/CAMBODIA/5.jpg', '../Images/architecture/GARDEN/3.jpg'
+	  ];
+
+	window.addEvent('domready', function() {
+		projects.set(images[Number.random(0, images.length - 1)], 1635, 1200);
+
+		_resize();
+	});
+
+	window.addEvent('resize', function() {
+		projects.resize();
+		_resize();
+	});
+
+</script>
+
+	<div class="bottom">
+		<p class="h2" style="float: left; margin-right: 22px;"> Công Ty TNHH Thiết Kế Kiến Trúc & Xây Dựng JEID</p>
+		<p class="h2" style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Điện thoại: 0989.626.238 - 0975.600.643&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: jeid.design@gmail.com</p>
+		<p class="h2" style="float: right;">design@2012 </p>
+	</div>
+</div>
+<div id="loader"></div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17793722-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www/') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

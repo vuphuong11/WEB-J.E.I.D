@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>J.E.I.D Portfolio</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="  "/>
+<meta name="keywords" content=" " />
+
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+<link rel="icon" href="../Images/index/icon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="../Images/index/icon.png" type="image/x-icon" />
+
+<script type="text/javascript" src="../script/mootools-core-1.4.0-full-compat-yc.js"></script>
+<script type="text/javascript" src="../script/mootools-more-1.4.0.1.js"></script>
+<script type="text/javascript" src="../script/mootools-cgrendering.js"></script>
+
+</head>
+<body onselectstart="return false;">
+
+<div class="main" id="layout">
+	<img id="background_image" src="../Images/index/d-t.gif" alt="" />
+		<div class="top" id="top">
+			<div class="icons">
+				<a class="h2" href="../index.htm"><img src="../Images/index/vn.gif" alt="" />&nbsp;Vietnamese</a>&nbsp;
+				<a class="h2" href="index-en.htm"><img src="../Images/index/en.gif" alt="" />&nbsp;English</a>&nbsp;
+            	<a class="h2" href="#like" class="like" onclick="return __like();"><img src="../Images/index/icon-like.png" alt="" />&nbsp;Like</a>
+			</div>
+			<ul class="inline menu">
+				<li><a class="h2" href="index-en.htm" >Home</a></li>
+				<li><a class="h2" href="all-project.htm" >Projects</a></li>
+				<li><a class="h2" href="about-us.htm" id="about">About us</a></li>
+				<li><a class="h2" href="contact-us.htm" id="contacts">Contact us</a></li>
+			</ul>
+		</div>
+	<script type="text/javascript" src="../script/swfobject.js"></script>
+
+	<div id="layer" style="background-image: url('../Images/index/d-t.gif');">
+	
+		<div class="project_top"><h2>VILLA DONG NAI</h2></div>
+		
+		<a href="#" title="Back" class="back" onclick="history.go((project.history == 0)?-1:project.history); return false;"></a>
+
+		<div id="project_content" class="project_content">
+			<a id="arrow-left-project" class="arrow-project"></a>
+			<a id="arrow-right-project" class="arrow-project"></a>
+		</div>
+	</div>
+
+	<div id="lenta" class="lenta">
+		<div id="gallery" class="gallery">
+			<div id="holder" class="holder">
+				<table id="lenta_table">
+					<tr><td>
+						<div id="lenta_cell_1" class="cell" onclick="project.set('../Images/architecture/VILLA DONG NAI/1.jpg', 1600, 1041, 1, 'img', '' ); return false;">
+						<img id="prev_img_1" onload="$(this).setStyle('visibility', 'visible'); $('lenta_cell_loader_1').fade(0);" src="../Images/architecture/VILLA DONG NAI/1.jpg" width="96" height="64" alt="" />
+							<div class="type img"></div>
+							<div id="lenta_cell_loader_1" class="type loader"></div>
+						</div></td>
+					<td>
+						<div id="lenta_cell_2" class="cell" onclick="project.set('../Images/architecture/VILLA DONG NAI/2.jpg', 1600, 1041, 2, 'img', '' ); return false;">
+							<img id="prev_img_2" onload="$(this).setStyle('visibility', 'visible'); $('lenta_cell_loader_2').fade(0);" src="../Images/architecture/VILLA DONG NAI/2.jpg" width="96" height="64" alt="" />
+							<div class="type img"></div>
+							<div id="lenta_cell_loader_2" class="type loader"></div>
+						</div></td>
+					<td>
+						<div id="lenta_cell_3" class="cell" onclick="project.set('../Images/architecture/VILLA DONG NAI/3.jpg', 1600, 1041, 3, 'img', '' ); return false;">
+							<img id="prev_img_3" onload="$(this).setStyle('visibility', 'visible'); $('lenta_cell_loader_3').fade(0);" src="../Images/architecture/VILLA DONG NAI/3.jpg" width="96" height="64" alt="" />
+							<div class="type img"></div>
+							<div id="lenta_cell_loader_3" class="type loader"></div>
+						</div></td>
+					<td>
+						<div id="lenta_cell_4" class="cell" onclick="project.set('../Images/architecture/VILLA DONG NAI/4.jpg', 1600, 1041, 4, 'img', '' ); return false;">
+							<img id="prev_img_4" onload="$(this).setStyle('visibility', 'visible'); $('lenta_cell_loader_4').fade(0);" src="../Images/architecture/VILLA DONG NAI/4.jpg" width="96" height="64" alt="" />
+							<div class="type img"></div>
+							<div id="lenta_cell_loader_4" class="type loader"></div>
+						</div></td>
+                   
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="lenta_left_grad"></div>
+		<div class="lenta_right_grad"></div>
+
+		<a id="gotoLeft" class="arrow left" onclick=""></a>
+		<a id="gotoRight" class="arrow right" onclick=""></a>
+	</div>
+
+	<div class="menuLeft"><a href="index-en.htm" class="logo"></a></div>
+	
+<script type="text/javascript">
+
+	var lenta = [
+     	['../Images/architecture/VILLA DONG NAI/1.jpg', 1600, 1041, 1, 'img', ''],
+     	['../Images/architecture/VILLA DONG NAI/2.jpg', 1600, 1041, 2, 'img', ''],
+     	['../Images/architecture/VILLA DONG NAI/3.jpg', 1600, 1041, 3, 'img', ''],
+     	['../Images/architecture/VILLA DONG NAI/4.jpg', 1600, 1041, 4, 'img', ''],
+		
+     ];
+
+	window.addEvent('domready', function() {
+
+		new gallery('gallery', 'holder');
+
+		var top = $('project_content').getSize().y / 2 - 28;
+
+		$('arrow-left-project').setStyle('top', top);
+		$('arrow-right-project').setStyle('top', top);
+
+		$('arrow-right-project').addEvent('click', function(){
+			if (project.loading) {
+				return false;
+			}
+			project.index++;
+			project.set(lenta[project.index][0], lenta[project.index][1], lenta[project.index][2], lenta[project.index][3], lenta[project.index][4], lenta[project.index][5], lenta[project.index][6], lenta[project.index][7]);
+		});
+
+		$('arrow-left-project').addEvent('click', function(){
+			if (project.loading) {
+				return false;
+			}
+			project.index--;
+			project.set(lenta[project.index][0], lenta[project.index][1], lenta[project.index][2], lenta[project.index][3], lenta[project.index][4], lenta[project.index][5], lenta[project.index][6], lenta[project.index][7]);
+		});
+	});
+
+	window.addEvent('resize', function() {
+		project.resize();
+
+		var top = $('project_content').getSize().y / 2 - 28;
+
+		$('arrow-left-project').setStyle('top', top);
+		$('arrow-right-project').setStyle('top', top);
+	});
+
+	window.addEvent('load', function(){
+
+		var i = window.location.hash.replace("#","") - 1;
+
+		if (lenta[i]) {
+			index = i;
+		}
+
+		project.set(lenta[index][0], lenta[index][1], lenta[index][2], lenta[index][3], lenta[index][4], lenta[index][5], lenta[index][6], lenta[index][7]);
+	});
+</script>
+
+	<div class="bottom">
+		<p class="h2" style="float: left; margin-right: 22px;"> JEID - Architecture and Construction Co.,Ltd</p>
+		<p class="h2" style="float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: 0989.626.238 - 0975.600.643&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: jeid.design@gmail.com</p>
+		<p class="h2" style="float: right;">design@2012 </p>
+	</div>
+</div>
+<div id="loader"></div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17793722-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www/') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
